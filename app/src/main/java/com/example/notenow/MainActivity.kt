@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity() {
             AppBarConfiguration
                 .Builder(
                     R.id.tasks_fragment_dest,
-                    R.id.statistics_fragment_dest
+                    R.id.statistics_fragment_dest,
+                    R.id.addTaskFragment
+
                 ).setOpenableLayout(drawerLayout)
                 .build()
     }
