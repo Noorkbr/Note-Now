@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_statistics" />
     <fragment
         android:id="@+id/addTaskFragment"
-        android:name="com.example.notenow.AddTaskFragment"
+        android:name="com.example.notenow.addtask.AddTaskFragment"
         android:label="Add Task"
         tools:layout="@layout/fragment_add_task" />
 </navigation>

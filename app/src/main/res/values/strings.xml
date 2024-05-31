@@ -50,7 +50,6 @@
     <string name="note_now">Note Now</string>
     <string name="add_task_string">Add Task</string>
     <string name="add_task_button">Add Task</string>
-    <string name="heelo_there_note_here">Hello There,
-        \Note Here</string>
+    <string name="heelo_there_note_here">Hello There,\ Note Here</string>
 
 </resources>
