@@ -17,19 +17,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:context=".addtask.AddTaskFragment"
-            android:background="@drawable/gradientx">
+            >
 
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/textWelcome"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="14sp"
-                android:text="@string/heelo_there_note_here"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="30sp"
-                android:textStyle="bold"
+                android:src="@drawable/xnow"
+                android:scaleType="centerCrop"
+
+
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +39,10 @@
 
                 />
 
-            <androidx.appcompat.widget.AppCompatEditText
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:hint="@string/title"
+                android:textColorHint="@color/black"
                 android:text="@={viewmodel.title}"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
@@ -48,46 +50,74 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.3"
-                android:background="#60FFFFFF"
-
-
+                app:layout_constraintVertical_bias="0.2"
+                android:background="#C8FFFFFF"
                 />
 
-            <androidx.appcompat.widget.AppCompatEditText
+
+
+            <TextView
+                android:id="@+id/warning_text_task_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="-16dp"
+                android:text="@string/_8_char"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.53"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
                 android:text="@={viewmodel.description}"
+                android:textColorHint="@color/black"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.4"
-                android:background="#51FFFFFF"
+                app:layout_constraintVertical_bias="0.3"
+                android:hint="@string/note_here"
+                android:background="#DCFFFFFF"
+
 
                 />
+
+
+
+
 
             <com.google.android.material.button.MaterialButton
                 android:onClick="@{()->viewmodel.saveTask()}"
                 android:id="@+id/lightning_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/add_task_button"
+                android:text="@string/add_note"
 
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:strokeColor="@color/black"
 
 
+                android:backgroundTint="#7EFF9800"
                 android:elevation="8dp"
                 android:padding="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.2"
-                android:background="@drawable/gradient_background"
+                app:layout_constraintVertical_bias="0.6"
+
 
                 />
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

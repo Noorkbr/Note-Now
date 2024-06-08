@@ -7,9 +7,13 @@
 
     <fragment
         android:id="@+id/tasks_fragment_dest"
-        android:name="com.example.notenow.TaskFragment"
+        android:name="com.example.notenow.task_models.TaskFragment"
         android:label="Task"
-        tools:layout="@layout/fragment_task" />
+        tools:layout="@layout/fragment_task" >
+        <action
+            android:id="@+id/action_tasks_fragment_dest_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
     <fragment
         android:id="@+id/statistics_fragment_dest"
         android:name="com.example.notenow.StatisticsFragment"
@@ -19,5 +23,25 @@
         android:id="@+id/addTaskFragment"
         android:name="com.example.notenow.addtask.AddTaskFragment"
         android:label="Add Task"
-        tools:layout="@layout/fragment_add_task" />
+        tools:layout="@layout/fragment_add_task" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_tasks_fragment_dest"
+            app:destination="@id/tasks_fragment_dest" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="isCompleted"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
 </navigation>

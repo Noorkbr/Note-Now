@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">What To do</string>
+    <string name="app_name">Note Now</string>
     <string name="add_task">New Task</string>
     <string name="edit_task">Edit Task</string>
     <string name="task_marked_complete">Task marked complete</string>
@@ -51,5 +51,10 @@
     <string name="add_task_string">Add Task</string>
     <string name="add_task_button">Add Task</string>
     <string name="heelo_there_note_here">Hello There,\ Note Here</string>
+    <string name="title_must_be_6_char_or_more">Title Must BE 6 charectar</string>
+    <string name="note_here">Note Here</string>
+    <string name="_8_char">8 char</string>
+    <string name="add_note">Add Note</string>
+    <string name="title">Title</string>
 
 </resources>

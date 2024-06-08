@@ -8,9 +8,9 @@
         android:id="@id/statistics_fragment_dest"
         android:icon="@drawable/ic_statistics"
         android:title="@string/statistics_title" />
-<item
-    android:id="@+id/addTaskFragment"
-    android:icon="@drawable/ic_add"
-    android:title="@string/add_task_string"/>
+   <item
+        android:id="@+id/addTaskFragment"
+        android:icon="@drawable/ic_add"
+        android:title="@string/add_task_string" />
 
 </menu>

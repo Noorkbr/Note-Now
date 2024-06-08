@@ -13,17 +13,16 @@ abstract class TodoDatabase : RoomDatabase() {
 
         private var database : TodoDatabase? = null
        @Synchronized
-       fun getInstance(context: Context):TodoDatabase{
-            if (database==null){
+       fun getInstance(context: Context):TodoDatabase {
+           if (database == null) {
 
-                database=Room.databaseBuilder(context,TodoDatabase::class.java,"task_db").build()
+               database = Room.databaseBuilder(context, TodoDatabase::class.java, "task_db").build()
 
-                return database as TodoDatabase
-            }
+               return database as TodoDatabase
+           }
 
-            return database as TodoDatabase
-
-        }
+           return database as TodoDatabase
+       }
 
     }
 
